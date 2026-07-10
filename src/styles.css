@@ -72,10 +72,10 @@ a {
 
   overflow: hidden;
 
-  background: rgba(8, 7, 5, 0.97);
+  background: rgba(15, 13, 10, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(232, 221, 201, 0.24);
+  border-bottom: 1px solid rgba(232, 221, 201, 0.18);
 
   transition:
     height 0.3s ease,
@@ -94,8 +94,10 @@ a {
   display: flex;
   align-items: center;
   flex: 0 0 auto;
+
   width: 250px;
   height: 64px;
+
   overflow: hidden;
   text-decoration: none;
 }
@@ -103,12 +105,11 @@ a {
 .wordmark img {
   display: block;
   width: auto;
-  height: 54px;
+  height: 58px;
   max-width: 100%;
-  max-height: 54px;
+  max-height: 58px;
   object-fit: contain;
   object-position: left center;
-  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.65));
 }
 
 .site-header.scrolled .wordmark {
@@ -116,8 +117,8 @@ a {
 }
 
 .site-header.scrolled .wordmark img {
-  height: 64px;
-  max-height: 64px;
+  height: 46px;
+  max-height: 46px;
 }
 
 .site-nav {
@@ -276,14 +277,14 @@ h3 {
   background:
     linear-gradient(
       90deg,
-      rgba(10, 9, 7, 0.94) 0%,
-      rgba(10, 9, 7, 0.66) 42%,
-      rgba(10, 9, 7, 0.16) 75%
+      rgba(10, 9, 7, 0.97) 0%,
+      rgba(10, 9, 7, 0.78) 42%,
+      rgba(10, 9, 7, 0.30) 75%
     ),
     linear-gradient(
       0deg,
-      rgba(10, 9, 7, 0.72),
-      transparent 44%
+      rgba(10, 9, 7, 0.82),
+      transparent 48%
     );
 }
 
@@ -297,7 +298,7 @@ h3 {
 
 .hero h1 {
   margin-bottom: 25px;
-  font-size: clamp(5rem, 12vw, 10.5rem);
+  font-size: clamp(4.25rem, 9vw, 8.25rem);
   letter-spacing: -0.04em;
 }
 
@@ -360,7 +361,7 @@ h3 {
 
 .release-art img {
   position: relative;
-  aspect-ratio: 1;
+  aspect-ratio: 0.92;
   object-fit: cover;
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.38);
 }
@@ -370,7 +371,7 @@ h3 {
 .closing-cta h2,
 .prose-intro h2 {
   margin-bottom: 28px;
-  font-size: clamp(3.2rem, 7vw, 6rem);
+  font-size: clamp(2.8rem, 5.5vw, 4.9rem);
 }
 
 .release-copy p {
@@ -404,7 +405,7 @@ h3 {
 .story-inner h2 {
   max-width: 880px;
   margin-bottom: 55px;
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-size: clamp(3rem, 6vw, 5.6rem);
 }
 
 .story-columns {
@@ -429,7 +430,7 @@ blockquote {
   max-width: 1000px;
   margin: 0 auto;
   font-family: var(--serif);
-  font-size: clamp(3.2rem, 7vw, 7rem);
+  font-size: clamp(2.8rem, 5.6vw, 5.5rem);
   line-height: 1.05;
 }
 
@@ -556,7 +557,7 @@ blockquote {
 .album-copy h2 {
   max-width: 900px;
   margin-bottom: 24px;
-  font-size: clamp(4rem, 9vw, 8rem);
+  font-size: clamp(3.5rem, 6.5vw, 6rem);
 }
 
 .album-line {
@@ -570,7 +571,7 @@ blockquote {
 
 .album-promo img {
   width: 100%;
-  max-height: 820px;
+  max-height: 700px;
   object-fit: cover;
   object-position: center top;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.45);
@@ -591,7 +592,7 @@ blockquote {
 
 .behind-copy h2 {
   margin-bottom: 28px;
-  font-size: clamp(3.2rem, 6vw, 5.8rem);
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
 }
 
 .behind-copy > p:not(.eyebrow) {
@@ -725,8 +726,8 @@ blockquote {
   background:
     linear-gradient(
       90deg,
-      rgba(13, 11, 8, 0.9),
-      rgba(13, 11, 8, 0.42)
+      rgba(13, 11, 8, 0.95),
+      rgba(13, 11, 8, 0.58)
     ),
     url('/assets/a-little-light-a-little-grace.jpg')
     center 58% / cover;
@@ -738,7 +739,7 @@ blockquote {
 
 .page-hero h1 {
   margin-bottom: 24px;
-  font-size: clamp(5rem, 11vw, 10rem);
+  font-size: clamp(4.2rem, 8vw, 7.5rem);
 }
 
 .page-hero p:last-child {
@@ -751,8 +752,8 @@ blockquote {
   background-image:
     linear-gradient(
       90deg,
-      rgba(13, 11, 8, 0.93),
-      rgba(13, 11, 8, 0.45)
+      rgba(13, 11, 8, 0.97),
+      rgba(13, 11, 8, 0.62)
     ),
     url('/assets/the-ghost-of-the-boy-promo.jpg');
 
@@ -765,8 +766,8 @@ blockquote {
   background-image:
     linear-gradient(
       90deg,
-      rgba(13, 11, 8, 0.94),
-      rgba(13, 11, 8, 0.4)
+      rgba(13, 11, 8, 0.97),
+      rgba(13, 11, 8, 0.58)
     ),
     url('/assets/the-ghost-of-the-boy-promo.jpg');
 
@@ -774,7 +775,7 @@ blockquote {
 }
 
 .story-page-hero h1 {
-  font-size: clamp(4rem, 9vw, 8rem);
+  font-size: clamp(3.5rem, 6.5vw, 6rem);
 }
 
 /* Music page releases */
@@ -801,7 +802,7 @@ blockquote {
 
 .release-row img,
 .ghost-art.large {
-  aspect-ratio: 1;
+  aspect-ratio: 0.92;
   object-fit: cover;
   box-shadow: 0 28px 70px rgba(0, 0, 0, 0.35);
 }
@@ -812,7 +813,7 @@ blockquote {
 
 .release-row h2 {
   margin-bottom: 25px;
-  font-size: clamp(3.2rem, 6.5vw, 6rem);
+  font-size: clamp(2.8rem, 5.2vw, 4.9rem);
 }
 
 .release-row p {
@@ -857,7 +858,7 @@ blockquote {
 
 .manifesto h2 {
   max-width: 1050px;
-  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-size: clamp(3rem, 6vw, 5.6rem);
 }
 
 .manifesto > p:last-child {
@@ -892,7 +893,7 @@ blockquote {
 }
 
 .contact-content h1 {
-  font-size: clamp(4rem, 8vw, 7rem);
+  font-size: clamp(3.3rem, 6vw, 5.5rem);
 }
 
 .contact-content p {
@@ -986,14 +987,9 @@ code {
   }
 
   .site-header.scrolled .wordmark img {
-  height: 48px;
-  max-height: 48px;
-
-  filter:
-    brightness(1.4)
-    contrast(1.18)
-    drop-shadow(0 2px 3px rgba(0, 0, 0, 0.95));
-}
+    height: 40px;
+    max-height: 40px;
+  }
 
   .menu-toggle {
     display: grid;
@@ -1195,5 +1191,35 @@ code {
 
   .album-line {
     font-size: 1.75rem;
+  }
+}
+
+
+/* Final scale refinements */
+.release-art,
+.album-promo,
+.artifact-preview {
+  max-width: 92%;
+  margin-inline: auto;
+}
+
+.music-card img,
+.ghost-art {
+  aspect-ratio: 1.35 / 1;
+}
+
+.release-row > img,
+.ghost-art.large {
+  max-width: 88%;
+  margin-inline: auto;
+}
+
+@media (max-width: 820px) {
+  .release-art,
+  .album-promo,
+  .artifact-preview,
+  .release-row > img,
+  .ghost-art.large {
+    max-width: 100%;
   }
 }
