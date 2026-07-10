@@ -1,1 +1,68 @@
-test 
+---
+const {
+  title = 'Pagani North',
+  description = 'Cinematic, story-driven music about memory, responsibility, longing, and the lives we leave behind.',
+  image = '/assets/a-little-light-a-little-grace.jpg'
+} = Astro.props;
+const path = Astro.url.pathname;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#17140f" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="wordmark" href="/" aria-label="Pagani North home"><span class="wordmark-star">✦</span><span>PAGANI</span><span>NORTH</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span></span><span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+      <nav id="site-nav" class="site-nav" data-nav>
+        <a class:list={[{active: path === '/'}]} href="/">Home</a>
+        <a class:list={[{active: path.startsWith('/music')}]} href="/music">Music</a>
+        <a class:list={[{active: path.startsWith('/story')}]} href="/story">The Story</a>
+        <a class:list={[{active: path.startsWith('/contact')}]} href="/contact">Contact</a>
+      </nav>
+    </header>
+    <main><slot /></main>
+    <footer class="site-footer">
+      <div>
+        <span class="footer-mark">✦ PAGANI NORTH</span>
+        <p>Music for the lives we remember in quiet rooms.</p>
+      </div>
+      <div class="footer-links">
+        <a href="https://distrokid.com/hyperfollow/paganinorth/the-ghost-of-the-boy" target="_blank" rel="noreferrer">Listen</a>
+        <a href="mailto:hello@paganinorth.com">Email</a>
+      </div>
+      <small>© {new Date().getFullYear()} Pagani North. All rights reserved.</small>
+    </footer>
+    <script is:inline>
+      const button = document.querySelector('[data-menu-toggle]');
+      const nav = document.querySelector('[data-nav]');
+      button?.addEventListener('click', () => {
+        const open = button.getAttribute('aria-expanded') === 'true';
+        button.setAttribute('aria-expanded', String(!open));
+        nav?.classList.toggle('open', !open);
+      });
+      const header = document.querySelector('[data-header]');
+      const updateHeader = () => header?.classList.toggle('scrolled', window.scrollY > 24);
+      updateHeader();
+      window.addEventListener('scroll', updateHeader, { passive: true });
+    </script>
+  </body>
+</html>
