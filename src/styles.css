@@ -72,10 +72,10 @@ a {
 
   overflow: hidden;
 
-  background: rgba(15, 13, 10, 0.94);
+  background: rgba(8, 7, 5, 0.97);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: 1px solid rgba(232, 221, 201, 0.18);
+  border-bottom: 1px solid rgba(232, 221, 201, 0.24);
 
   transition:
     height 0.3s ease,
@@ -110,6 +110,11 @@ a {
   max-height: 58px;
   object-fit: contain;
   object-position: left center;
+
+  filter:
+    brightness(1.35)
+    contrast(1.15)
+    drop-shadow(0 2px 3px rgba(0, 0, 0, 0.9));
 }
 
 .site-header.scrolled .wordmark {
@@ -987,9 +992,14 @@ code {
   }
 
   .site-header.scrolled .wordmark img {
-    height: 40px;
-    max-height: 40px;
-  }
+  height: 48px;
+  max-height: 48px;
+
+  filter:
+    brightness(1.4)
+    contrast(1.18)
+    drop-shadow(0 2px 3px rgba(0, 0, 0, 0.95));
+}
 
   .menu-toggle {
     display: grid;
