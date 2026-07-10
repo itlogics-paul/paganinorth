@@ -1,1 +1,79 @@
-test
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Pagani North — Official Site">
+  <section class="hero">
+    <div class="hero-image" aria-hidden="true"></div>
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="hero-content reveal">
+      <p class="eyebrow">Pagani North</p>
+      <h1>PAGANI<br />NORTH</h1>
+      <p class="hero-line">Cinematic, intimate songs about memory, responsibility, longing, and the lives still moving beneath the one we learned to live.</p>
+      <div class="actions">
+        <a class="button button-primary" href="https://distrokid.com/hyperfollow/paganinorth/the-ghost-of-the-boy" target="_blank" rel="noreferrer">Listen to the album</a>
+        <a class="button button-ghost" href="#ghost">Enter the story</a>
+      </div>
+    </div>
+    <a class="scroll-cue" href="#latest" aria-label="Scroll to latest release"><span></span>Scroll</a>
+  </section>
+
+  <section id="latest" class="section release-feature">
+    <div class="release-art reveal">
+      <img src="/assets/a-little-light-a-little-grace.jpg" alt="A Little Light, A Little Grace cover artwork" />
+    </div>
+    <div class="release-copy reveal delay-1">
+      <p class="eyebrow">Featured song</p>
+      <h2>A Little Light,<br />A Little Grace</h2>
+      <p class="lead">A quiet acceptance that love does not have to occupy the whole world to be real, generous, or lasting.</p>
+      <p>Intimate acoustic storytelling shaped by restraint, warmth, and the difficult grace of letting another person remain fully themselves.</p>
+      <a class="text-link" href="https://distrokid.com/hyperfollow/paganinorth/a-little-light-a-little-grace" target="_blank" rel="noreferrer">Listen everywhere <span>↗</span></a>
+    </div>
+  </section>
+
+  <section id="ghost" class="section album-feature">
+    <div class="album-copy reveal">
+      <p class="eyebrow">Album and title track</p>
+      <h2>The Ghost<br />of the Boy</h2>
+      <p class="album-line">Some lives are not lost. They are buried so another life can continue.</p>
+      <div class="story-columns">
+        <p>Life can force us into a person capable of carrying what must be carried. Responsibility becomes survival. The life that might have been cannot remain close enough to touch, because longing for it would make the life in front of us impossible to live.</p>
+        <p>So the boy is buried—not because he mattered less, but because remembering him cost too much. Then she arrives and brings those forgotten moments back to life. She resurrects the boy who had been made a ghost.</p>
+      </div>
+      <a class="button button-outline" href="https://distrokid.com/hyperfollow/paganinorth/the-ghost-of-the-boy" target="_blank" rel="noreferrer">Listen to the album</a>
+    </div>
+    <div class="album-promo reveal delay-1">
+      <img src="/assets/the-ghost-of-the-boy-promo.jpg" alt="The Ghost of the Boy by Pagani North, available now" />
+    </div>
+  </section>
+
+  <section class="section behind-song">
+    <div class="behind-copy reveal">
+      <p class="eyebrow">Behind the song</p>
+      <h2>A song written from the place where memory and responsibility collide.</h2>
+      <p class="lead">The title track begins with a man waking in tears, moving through the day in “a borrowed disguise,” and wanting some part of himself back to keep.</p>
+      <p>The handwritten chord pages preserve the song in its most direct form: capo at the third fret, approximately 83 BPM, the lyrics and chords laid out as they were shaped. They become more than sheet music—they are part of the story of the song itself.</p>
+      <div class="actions">
+        <a class="button button-primary" href="/assets/the-ghost-of-the-boy-handwritten-chords.pdf" target="_blank">View handwritten chords</a>
+        <a class="button button-ghost" href="/story#behind-the-song">Read the full story</a>
+      </div>
+    </div>
+    <a class="artifact-preview reveal delay-1" href="/assets/the-ghost-of-the-boy-handwritten-chords.pdf" target="_blank" aria-label="Open handwritten chord chart PDF">
+      <img src="/assets/the-ghost-of-the-boy-handwritten-preview.jpg" alt="First page of the handwritten chord chart for The Ghost of the Boy" />
+      <span>Original handwritten chord chart · 4 pages</span>
+    </a>
+  </section>
+
+  <section class="section quote-section">
+    <blockquote class="reveal">“The past cost too much to remember.”</blockquote>
+    <p class="quote-note reveal delay-1">From <em>The Ghost of the Boy</em></p>
+  </section>
+
+  <section class="section closing-cta">
+    <div class="reveal">
+      <p class="eyebrow">Pagani North</p>
+      <h2>Stay close to the songs.</h2>
+      <p>New releases, stories behind the music, and occasional notes from quiet rooms.</p>
+      <a class="button button-primary" href="mailto:hello@paganinorth.com">hello@paganinorth.com</a>
+    </div>
+  </section>
+</BaseLayout>
